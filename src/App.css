@@ -1,0 +1,146 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.bg-container {
+  height: 100vh;
+  font-family: 'Roboto';
+}
+
+.nav-bar-container {
+  background-color: #2c0e3a;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 10vh;
+  color: #ffffff;
+}
+.website-logo {
+  height: 35px;
+  margin: 2px 20px;
+}
+.navbar-score-timer-container {
+  display: flex;
+  flex-direction: row;
+  /* justify-content: center; */
+  align-items: center;
+}
+.timer {
+  height: 20px;
+  margin-left: 15px;
+}
+
+.game-and-score-pages-container {
+  background-image: url('https://assets.ccbp.in/frontend/react-js/match-game-bg.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  /* object-fit: contain; */
+  height: 92vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.game-page-bg {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.displayed-image {
+  margin-top: 30px;
+  width: 500px;
+  height: 270px;
+  border-radius: 3px;
+  margin-bottom: 20px;
+}
+ul {
+  list-style: none;
+}
+.li-item {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.tabs-container {
+  padding: 0px;
+  width: 560px;
+  list-style: none;
+  display: flex;
+  margin: 10px;
+  align-items: center;
+  justify-content: center;
+}
+.tabs-thumbnails-container {
+  width: 500px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.thumbnails-container {
+  list-style: none;
+  width: 545px;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+}
+.score-value {
+  color: #fec653;
+}
+.paragraph {
+  font-size: 18px;
+  font-weight: none;
+}
+.timer-count {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 1px 20px 1px 10px;
+}
+
+@media (max-width: 567px) {
+  .displayed-image {
+    width: 300px;
+    height: 180px;
+  }
+  .tabs-container {
+    padding: 0px;
+  }
+  .tabs-thumbnails-container {
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .website-logo {
+    height: 35px;
+  }
+  .thumbnails-container {
+    width: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 30px;
+  }
+  .timer {
+    height: 20px;
+  }
+}

@@ -1,0 +1,26 @@
+.thumbnails {
+  width: 80px;
+  height: 80px;
+}
+
+.thumbnail-btn {
+  cursor: pointer;
+}
+.list-item {
+  width: 100px;
+}
+
+@media (max-width: 567px) {
+  .thumbnails {
+    width: 60px;
+    height: 60px;
+  }
+  .thumbnail-btn {
+    width: 60px;
+    height: 60px;
+    margin: 8px;
+  }
+  .list-item {
+    width: 65px;
+  }
+}
